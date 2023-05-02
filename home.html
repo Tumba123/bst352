@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sichtkontrolle technicher Anlagen </title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>BST. 352 Sichtkontrolle technicher Anlagen</h1>
+    <div id="tasks">
+        <!-- Add table for displaying tasks -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Ifd. Nr. zu Kontrollierende Anlage/Standort Woche <span id="week-number"></span></th>
+                    <th>Montag</th>
+                    <th>Dienstag</th>
+                    <th>Mittwoch</th>
+                    <th>Donnerstag</th>
+                    <th>Freitag</th>
+                    <th>Samstag</th>
+                    <th>Sontag</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Add rows for each task -->
+                <tr>
+                    <td>1. |  BMZ (EG-Hofpförtner)</td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                  </tr>
+                <tr>
+                    <td>2. |  EMA (EG-FM/Büro)</td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                </tr>
+                <tr>
+                    <td>3. |  Müll-und Papierpresse (EG Hof)</td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                </tr>
+                <tr>
+                    <td>4. |  GLT (UG-FM Werkstatt)</td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                </tr>
+                <tr>
+                    <td>5. |  Warmwasserbereiter LBM (UG Lager neben Aufzug)</td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                </tr>
+                <tr>
+                    <td>6. |  Hebeanlage 1 (UG Treppe E)</td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                </tr>
+                <tr>
+                    <td>7. |  Hebeanlage (UG)</td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                </tr>
+                <tr>
+                    <td>8. |  Niederspannung (UG)</td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                </tr>
+                <tr>
+                    <td>9. |  Sicherheitsbeleuchtung Schaltraum (UG)</td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                </tr>
+                <tr>
+                    <td>10. | Heizungszentrale (5.OG)</td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                    <td><input type="checkbox" onclick="taskDone(this)"></td>
+                </tr>         
+                <tr>
+                    <td>Alles Fertig</td>
+                    <td><input type="checkbox" onclick="tickColumn(2)"></td>
+                    <td><input type="checkbox" onclick="tickColumn(3)"></td>
+                    <td><input type="checkbox" onclick="tickColumn(4)"></td>
+                    <td><input type="checkbox" onclick="tickColumn(5)"></td>
+                    <td><input type="checkbox" onclick="tickColumn(6)"></td>
+                    <td><input type="checkbox" onclick="tickColumn(7)"></td>
+                    <td><input type="checkbox" onclick="tickColumn(8)"></td>
+                </tr>
+            </tbody>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
