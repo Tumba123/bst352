@@ -38,3 +38,22 @@ function taskDone(checkbox) {
               var weekNumber = today.getWeek();
               document.getElementById("week-number").innerHTML = " " + weekNumber;
           };
+
+// get all checkboxes
+var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+// loop through checkboxes and add event listener
+for (var i = 0; i < checkboxes.length; i++) {
+  checkboxes[i].addEventListener('change', function() {
+    // save the state of this checkbox using local storage
+    localStorage.setItem(this.id, this.checked);
+  });
+}
+
+// on page load, set the state of each checkbox from local storage
+for (var i = 0; i < checkboxes.length; i++) {
+  var value = localStorage.getItem(checkboxes[i].id);
+  if (value !== null) {
+    checkboxes[i].checked = (value === 'true');
+  }
+}
